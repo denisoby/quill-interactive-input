@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Main Quill library -->
+
+		<!-- Theme included stylesheets -->
+		<link href="https://cdn.quilljs.com/1.0.0/quill.snow.css" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<style>
+			.ql-container {
+			  font-family: 'Roboto', sans-serif;
+			  font-size: 16pt;
+			}
+
+			.link-virtual{
+				cursor: pointer;
+			}
+
+			.ql-snow div.ql-tooltip::before{
+				content: "" /* by default snow theme here shows "Visit URL:" */
+			}
+
+			.ql-snow div.ql-tooltip a.ql-preview {
+				max-width: 500px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="editor"></div>
+		<script src="bundle.js"></script>
+	</body>
+</html>
